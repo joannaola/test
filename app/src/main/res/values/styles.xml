@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="wait">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="smart">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#C0CC97</item>
+    </style>
+
+    <style name="receive_rea">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="stay_inform">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#7A7A7A</item>
+    </style>
+
+    <style name="hello">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="there">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#535729</item>
+    </style>
+
+    <style name="nowS">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="breaktime">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#C62525</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="dsad">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#C62525</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="people_wait">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+    </style>
+
+    <style name="position">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+    </style>
+
+    <style name="some_id">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="to_get_a_nu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="enter_the_s">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="wtsmrt12345">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="or">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="queueing_in">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="thank_you_f">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="ppl_wait">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="pos_wait">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#21872B</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="est_wait_ti">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#5E5E5E</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="m">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="next">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="next_num">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#040404</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="one">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dash">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="login_your_">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="enter_user">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">9sp</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="dont_acc">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="next3">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sidebar_btns">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4D4D4D</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="sn">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="generate_qr">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="share_with">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D0D0D0</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+
+    <style name="administrat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#171725</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TQTnum">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="total_queue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/inter_extralight</item>
+    </style>
+
+    <style name="metric">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="primary_tit">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#B3000000</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="select_time">
+        <item name="android:textColor">#576984</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

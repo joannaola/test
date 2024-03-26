@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MytestmobApplication</string>
+    <string name="wait">Wait</string>
+    <string name="smart">Smart</string>
+    <string name="todo">TODO</string>
+    <string name="receive_rea">Receive Real-time Updates</string>
+    <string name="stay_inform">Stay informed with notifications as your turn approaches. Receive instant updates on your queue status, allowing you to plan your time effectively and minimize wait times.</string>
+    <string name="waitsmartis">WaitSmart is your,  Queue Management Solution. Join virtual queues, get real-time updates, and optimize your wait times. Welcome to the future of waiting.</string>
+    <string name="simplyscan">Simply scan a QR code to instantly receive your queue number. Say goodbye to long lines and waiting. Get started with WaitSmart for seamless queue management.</string>
+    <string name="hello">Hello</string>
+    <string name="there">there!</string>
+    <string name="nowS">NOW SERVING</string>
+    <string name="people_wait">People waiting</string>
+    <string name="position">Position</string>
+    <string name="some_id">:</string>
+    <string name="to_get_a_nu">To get a number in Queue :</string>
+    <string name="enter_the_s">Enter the SN (Serial Number)</string>
+    <string name="wtsmrt12345">WTSMRT123456789</string>
+    <string name="or">Or</string>
+    <string name="queueing_in">Queueing Instructions:\n\n\n1. Get your queue number by scanning a QR Code or typing the Serial Number.\n\n2. Feel the buzz! Your phone will vibrate when you\'re 5 numbers away from being served.\n\n3. Don\'t worry about missing your turn! If you fail to show up when called, we\'ll automatically requeue you. You\'ll be placed at the end of the queue to ensure fairness.\n\n4. Automatic queueing will be only triggered once. After that, simply rescan or retype the Serial Number to join again.</string>
+    <string name="thank_you_f">Thank you for joining the queue with WaitSmart! Your number has been assigned. Please wait for your turn. We appreciate your patience!"</string>
+    <string name="dsad">03</string>
+    <string name="ppl_wait">51</string>
+    <string name="pos_wait">38</string>
+    <string name="est_wait_ti">est. wait time</string>
+    <string name="m">48m</string>
+    <string name="next">Next</string>
+    <string name="next_num">04</string>
+    <string name="one">00</string>
+    <string name="dash">-</string>
+
+</resources>
