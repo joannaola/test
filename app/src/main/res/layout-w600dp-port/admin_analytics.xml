@@ -110,7 +110,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="90dp"
         android:gravity="center"
-        android:text="____________________________________"
+        android:text="_____________________________________"
         android:textAppearance="@style/share_with"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextSizeCheck" />
 
