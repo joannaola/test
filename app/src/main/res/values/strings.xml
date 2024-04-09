@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MytestmobApplication</string>
+    <string name="app_name">WaitSmart</string>
     <string name="wait">Wait</string>
     <string name="smart">Smart</string>
     <string name="todo">TODO</string>

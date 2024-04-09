@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MytestmobApplication"
+rootProject.name = "WaitSmart"
 include(":app")
