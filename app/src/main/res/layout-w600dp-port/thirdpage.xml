@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@color/white"
-    tools:context=".SecondPage">
+    android:background="@color/lg"
+    tools:context=".ThirdPage">
 
     <LinearLayout
         android:id="@+id/LLwaitsmart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="12dp"
+        android:layout_marginVertical="99dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -40,75 +40,76 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/layerone"
-        android:layout_width="277dp"
-        android:layout_height="277dp"
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/LLwaitsmart"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-100dp"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/todo"
-        android:src="@drawable/layerone"
+        android:src="@drawable/time"
         tools:ignore="ImageContrastCheck,ObsoleteLayoutParam" />
 
     <TextView
-        android:id="@+id/how_it"
+        android:id="@+id/receive_rea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layerone"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="0dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/reem_kufi"
-        android:text="How it works?"
+        android:text="@string/receive_rea"
         android:textAppearance="@style/receive_rea"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
     <TextView
-        android:id="@+id/simplyscan"
-        android:layout_width="wrap_content"
+        android:id="@+id/stay_inform"
+        android:layout_width="450dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/how_it"
-        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/receive_rea"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/reem_kufi"
         android:gravity="center"
-        android:text="@string/simplyscan"
+        android:text="@string/stay_inform"
         android:textAppearance="@style/stay_inform"
         tools:ignore="ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
 
     <ImageView
-        android:id="@+id/group2"
+        android:id="@+id/group3"
         android:layout_width="61dp"
         android:layout_height="16dp"
-        android:layout_below="@id/simplyscan"
+        android:layout_below="@id/stay_inform"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/groupfor"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/groupfive"
         android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam" />
 
     <ImageButton
-        android:id="@+id/back"
+        android:id="@+id/backk"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_below="@+id/group2"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        android:backgroundTint="@color/white"
+        android:layout_below="@+id/group3"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@color/lg"
         android:contentDescription="TODO"
         android:src="@drawable/back"
         tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
-        android:id="@+id/nextbtn2"
-        android:layout_width="118dp"
-        android:layout_height="117dp"
+        android:id="@+id/getstarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
-        android:layout_toRightOf="@+id/group2"
-        android:layout_below="@+id/group2"
-        android:backgroundTint="@color/white"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@+id/group3"
+        android:layout_below="@+id/group3"
+        android:backgroundTint="@color/lg"
         android:contentDescription="TODO"
-        android:src="@drawable/arrow"
+        android:src="@drawable/groupsix"
         tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
+
 </RelativeLayout>
-
-

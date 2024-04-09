@@ -6,13 +6,13 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@color/white"
-    tools:context=".AdminSignup">
+    tools:context=".AdminLogin">
 
     <LinearLayout
         android:id="@+id/LLwaitsmart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="12dp"
+        android:layout_marginVertical="62dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -47,7 +47,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/todo"
-        android:src="@drawable/illustration2"
+        android:src="@drawable/illustration"
         tools:ignore="ImageContrastCheck,ObsoleteLayoutParam" />
 
     <TextView
@@ -56,8 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/illus"
-        android:layout_marginTop="40dp"
-        android:text="Create account"
+        android:layout_marginTop="50dp"
+        android:text="Login your admin account"
         android:textAppearance="@style/login_your_"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
@@ -67,17 +67,17 @@
         android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/login_your"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rectangle_snum"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
     <EditText
-        android:id="@+id/enter_user2"
+        android:id="@+id/enter_user"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/login_your"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="49dp"
         android:hint="Enter your username"
         android:textAppearance="@style/enter_user"
         tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,TextFields,TouchTargetSizeCheck" />
@@ -87,8 +87,8 @@
         android:layout_width="66dp"
         android:layout_height="14dp"
         android:layout_below="@id/login_your"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="165dp"
         android:text="USERNAME"
         android:textAppearance="@style/label"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -99,17 +99,17 @@
         android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/rectangle_usern"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rectangle_snum"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
     <EditText
-        android:id="@+id/enter_pass2"
+        android:id="@+id/enter_pass"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/rectangle_usern"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="48dp"
         android:hint="Enter your password"
         android:textAppearance="@style/enter_user"
         tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,TextFields,TouchTargetSizeCheck" />
@@ -119,41 +119,43 @@
         android:layout_width="66dp"
         android:layout_height="14dp"
         android:layout_below="@id/rectangle_usern"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="165dp"
         android:text="PASSWORD"
         android:textAppearance="@style/label"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
     <ImageButton
-        android:id="@+id/btn_signup"
+        android:id="@+id/btn_login"
         android:layout_width="109dp"
         android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/rectangle_pass"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/white"
-        android:src="@drawable/btn_signup"
+        android:src="@drawable/btn_login"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/already_acc"
+        android:id="@+id/dont_acc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btn_signup"
-        android:text="Already have an account?"
+        android:layout_below="@+id/btn_login"
+        android:text="Don't have an account?"
         android:textAppearance="@style/dont_acc"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
     <ImageButton
-        android:id="@+id/blk_btn_login"
+        android:id="@+id/btn_register"
         android:layout_width="109dp"
         android:layout_height="32dp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/already_acc"
+        android:layout_below="@+id/dont_acc"
         android:backgroundTint="@color/white"
-        android:src="@drawable/blk_login"
+        android:src="@drawable/btn_reg"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-    
+
 </RelativeLayout>

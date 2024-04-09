@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_gravity="center"
     android:background="@color/white"
     tools:context=".HomePage">
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="10dp">
         <TextView
             android:id="@+id/hello"
             android:layout_width="wrap_content"
@@ -39,8 +39,8 @@
         android:layout_width="371dp"
         android:layout_height="55dp"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rectangle_ns"
         tools:ignore="ContentDescription,ImageContrastCheck,ObsoleteLayoutParam" />
 
@@ -48,9 +48,9 @@
         android:id="@+id/nowS2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="155dp"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="11dp"
         android:fontFamily="@font/poppins"
         android:text="@string/nowS"
         android:textAppearance="@style/nowS"
@@ -100,15 +100,7 @@
         android:textAppearance="@style/position"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
-    <TextView
-        android:id="@+id/some_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="280dp"
-        android:text="@string/some_id"
-        android:textAppearance="@style/some_id"
-        tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
 
     <ImageButton
         android:id="@+id/question"
@@ -125,10 +117,11 @@
         android:id="@+id/to_get_a_nu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rectangle_pw"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:text="@string/to_get_a_nu"
+        android:layout_toRightOf="@id/rectangle_ns2"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="60dp"
+        android:text="Get your Queue number"
         android:textAppearance="@style/to_get_a_nu"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
@@ -136,8 +129,9 @@
         android:id="@+id/enter_the_s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/to_get_a_nu"
-        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/LLwaitsmart"
+        android:layout_below="@id/to_get_a_nu"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
         android:text="@string/enter_the_s"
         android:textAppearance="@style/enter_the_s"
@@ -148,8 +142,9 @@
         android:layout_width="199dp"
         android:layout_height="32dp"
         android:layout_below="@id/enter_the_s"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/rectangle_pos"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/rectangle_snum"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -158,8 +153,9 @@
         android:layout_width="196dp"
         android:layout_height="41dp"
         android:layout_below="@id/enter_the_s"
-        android:layout_marginTop="3dp"
-        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/rectangle_pos"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="70dp"
         android:textAlignment="center"
         android:text="@string/wtsmrt12345"
         android:textAppearance="@style/wtsmrt12345"
@@ -169,9 +165,10 @@
         android:id="@+id/or"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/enter_the_s"
-        android:layout_toRightOf="@id/enter_the_s"
-        android:layout_marginLeft="40dp"
+        android:layout_below="@id/rectangle_snum"
+        android:layout_toRightOf="@id/rectangle_pos"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"
         android:text="@string/or"
         android:textAppearance="@style/or"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -180,9 +177,9 @@
         android:id="@+id/qrcode"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_below="@id/to_get_a_nu"
+        android:layout_below="@id/rectangle_snum"
         android:layout_toRightOf="@id/or"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
         android:background="@drawable/qrcode"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck" />
@@ -193,40 +190,40 @@
         android:layout_height="39dp"
         android:layout_below="@id/or"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:src="@drawable/group_seven"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <FrameLayout
         android:id="@+id/frmlyt_btnhelp"
-        android:layout_width="370dp"
-        android:layout_height="473dp"
+        android:layout_width="690dp"
+        android:layout_height="282dp"
         android:layout_centerInParent="true"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam">
 
         <ImageView
             android:id="@+id/rectangle_btnhelp"
-            android:layout_width="367dp"
-            android:layout_height="473dp"
-            android:background="@drawable/rectangle_qinstruc"
+            android:layout_width="690dp"
+            android:layout_height="282dp"
+            android:background="@drawable/rectangle_sixteen"
             tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
         <TextView
             android:id="@+id/queueing_in"
-            android:layout_width="323dp"
-            android:layout_height="426dp"
+            android:layout_width="643dp"
+            android:layout_height="229dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="@string/queueing_in"
+            android:text="@string/land_queueing_in"
             android:textAppearance="@style/queueing_in"
             tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
         <ImageButton
             android:id="@+id/exit_square"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="320dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="640dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/exit_square"
             tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />

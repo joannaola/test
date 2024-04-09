@@ -12,7 +12,7 @@
         android:id="@+id/LLwaitsmart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="12dp"
+        android:layout_marginVertical="32dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -44,18 +44,40 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/btn_menu"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/txt_report"
+        android:id="@+id/wait_dash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/LLwaitsmart"
         android:layout_marginLeft="80dp"
-        android:text="Report"
+        android:text="Wait"
+        android:textAppearance="@style/administrat"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/smart_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_toRightOf="@id/wait_dash"
+        android:text="Smart"
+        android:textColor="#C0CC97"
+        android:textAppearance="@style/administrat"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/smart_dash"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_marginLeft="10dp"
+        android:text="Dashboard"
         android:textAppearance="@style/administrat"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
@@ -65,7 +87,8 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_marginLeft="290dp"
+        android:layout_toRightOf="@id/txt_report"
+        android:layout_marginLeft="200dp"
         android:src="@drawable/filter"
         tools:ignore="ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -75,7 +98,6 @@
         android:layout_width="373dp"
         android:layout_height="246dp"
         android:layout_below="@id/btn_download"
-        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/white"
         android:src="@drawable/rctngl_anlytcs"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mytestmobapplication"
+    namespace = "com.jtdev.WaitSmart"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mytestmobapplication"
+        applicationId = "com.jtdev.WaitSmart"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -18,6 +18,8 @@
     <string name="wtsmrt12345">WTSMRT123456789</string>
     <string name="or">Or</string>
     <string name="queueing_in">Queueing Instructions:\n\n\n1. Get your queue number by scanning a QR Code or typing the Serial Number.\n\n2. Feel the buzz! Your phone will vibrate when you\'re 5 numbers away from being served.\n\n3. Don\'t worry about missing your turn! If you fail to show up when called, we\'ll automatically requeue you. You\'ll be placed at the end of the queue to ensure fairness.\n\n4. Automatic queueing will be only triggered once. After that, simply rescan or retype the Serial Number to join again.</string>
+    <string name="land_queueing_in">Queueing Instructions:\n\n1. Get your queue number by scanning a QR Code or typing the Serial Number.\n2. Feel the buzz! Your phone will vibrate when you\'re 5 numbers away from being served.\n3. Don\'t worry about missing your turn! If you fail to show up when called, we\'ll automatically requeue you. You\'ll be placed at the end of the queue to ensure fairness.\n4. Automatic queueing will be only triggered once. After that, simply rescan or retype the Serial Number to join again.</string>
+
     <string name="thank_you_f">Thank you for joining the queue with WaitSmart! Your number has been assigned. Please wait for your turn. We appreciate your patience!"</string>
     <string name="dsad">03</string>
     <string name="ppl_wait">51</string>

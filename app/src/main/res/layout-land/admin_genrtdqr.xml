@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_gravity="center"
     android:background="@color/white"
     tools:context=".AdminGenrtdQR">
@@ -53,8 +53,7 @@
         android:id="@+id/qr_box"
         android:layout_width="337dp"
         android:layout_height="283dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
         android:layout_below="@id/LLwaitsmart"
         android:background="@drawable/qr_rctngl"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
@@ -63,9 +62,10 @@
         android:id="@+id/SN"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_below="@id/qr_box"
+        android:layout_toRightOf="@id/qr_box"
+        android:layout_below="@id/LLwaitsmart"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="90dp"
         android:text="SN"
         android:textAppearance="@style/sn"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -75,9 +75,9 @@
         android:layout_width="270dp"
         android:layout_height="43dp"
         android:layout_toRightOf="@id/SN"
-        android:layout_below="@id/qr_box"
+        android:layout_below="@id/LLwaitsmart"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="78dp"
         android:background="@drawable/sn_rctngl"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -86,7 +86,8 @@
         android:layout_width="186dp"
         android:layout_height="43dp"
         android:layout_below="@id/sn_box"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/qr_box"
+        android:layout_marginLeft="125dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/btn_green"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -95,8 +96,9 @@
         android:id="@+id/txt_genqr"
         android:layout_width="155dp"
         android:layout_height="21dp"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/qr_box"
         android:layout_below="@id/sn_box"
+        android:layout_marginLeft="139dp"
         android:layout_marginTop="72dp"
         android:text="Generate QR Code"
         android:textAppearance="@style/generate_qr"
@@ -107,8 +109,8 @@
         android:layout_width="253dp"
         android:layout_height="255dp"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/qrcode_queue"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -116,9 +118,11 @@
         android:id="@+id/txtvw_SN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/qr_box"
+        android:layout_toRightOf="@id/qr_box"
+        android:layout_below="@id/LLwaitsmart"
         android:layout_marginLeft="140dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="89dp"
+        android:gravity="center"
         android:text="QWERTY712365789"
         android:textAppearance="@style/generate_qr"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -128,6 +132,7 @@
         android:layout_width="33dp"
         android:layout_height="33dp"
         android:layout_below="@id/sn_box"
+        android:layout_toRightOf="@id/qr_box"
         android:layout_marginLeft="139dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/btn_share"
@@ -146,46 +151,48 @@
 
     <FrameLayout
         android:id="@+id/frmlyt_shares"
-        android:layout_width="410dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/sn_box"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="5dp"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam">
         <ImageView
             android:id="@+id/share_with"
-            android:layout_width="410dp"
-            android:layout_height="200dp"
-            android:background="@drawable/rctngl_sharewith"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle170"
             tools:ignore="ContentDescription,ImageContrastCheck,ObsoleteLayoutParam" />
 
         <TextView
             android:id="@+id/txt_sharewith"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="180dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="Sharewith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="10dp"
+            android:text="Share with"
             android:textAppearance="@style/share_with"
             tools:ignore="HardcodedText,ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
 
         <TextView
             android:id="@+id/line_one"
-            android:layout_width="155dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="____________________________________"
+            android:text="________________________________________"
             android:textAppearance="@style/share_with"
             tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
 
         <TextView
             android:id="@+id/line_two"
-            android:layout_width="155dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="235dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="435dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="____________________________________"
+            android:text="________________________________________"
             android:textAppearance="@style/share_with"
             tools:ignore="HardcodedText,ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
 
@@ -193,7 +200,7 @@
             android:id="@+id/btn_teams"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginStart="190dp"
+            android:layout_marginLeft="360dp"
             android:layout_marginTop="90dp"
             android:background="@drawable/teams"
             tools:ignore="ContentDescription,ObsoleteLayoutParam" />
@@ -202,7 +209,7 @@
             android:id="@+id/btn_fb"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginStart="90dp"
+            android:layout_marginLeft="180dp"
             android:layout_marginTop="90dp"
             android:background="@drawable/fb"
             tools:ignore="ContentDescription,ObsoleteLayoutParam" />
@@ -211,7 +218,7 @@
             android:id="@+id/btn_whatsapp"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginStart="290dp"
+            android:layout_marginLeft="540dp"
             android:layout_marginTop="90dp"
             android:background="@drawable/whatsapp"
             tools:ignore="ContentDescription,ImageContrastCheck,ObsoleteLayoutParam" />
@@ -219,91 +226,89 @@
 
     <FrameLayout
         android:id="@+id/frmlyt_sidebar3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam">
         <ImageView
             android:id="@+id/sidebar"
-            android:layout_width="369dp"
-            android:layout_height="600dp"
-            android:background="@drawable/sidebar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_twentyfour"
             tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
         <TextView
             android:id="@+id/wait7"
-            android:layout_width="90dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/reem_kufi"
-            android:gravity="top|start"
             android:text="@string/wait"
             android:textAppearance="@style/wait"
             tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
         <TextView
             android:id="@+id/smart7"
-            android:layout_width="120dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="349dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/reem_kufi"
-            android:gravity="top|start"
             android:text="Smart."
             android:textAppearance="@style/smart"
             tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_home3"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="130dp"
             android:background="@drawable/btn_rectangle"
             android:drawableStart="@drawable/btn_home_img"
-            android:gravity="start|center"
-            android:paddingHorizontal="70dp"
+            android:gravity="center"
+            android:paddingHorizontal="300dp"
             android:text="     Home"
             android:textAppearance="@style/sidebar_btns"
             tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
         <Button
             android:id="@+id/btn_genqr3"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="190dp"
             android:background="@drawable/btn_rctngl_genqr"
             android:drawableStart="@drawable/btn_qr_img"
-            android:gravity="start|center"
-            android:paddingHorizontal="70dp"
-            android:text="     Generate QR"
+            android:gravity="center"
+            android:paddingHorizontal="300dp"
+            android:text="       Generate QR"
             android:textAppearance="@style/sidebar_btns"
             tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
         <Button
             android:id="@+id/btn_anlytcs3"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="250dp"
             android:background="@drawable/btn_rctngl_anlytcs"
             android:drawableStart="@drawable/btn_anlytcs_img"
-            android:gravity="start|center"
-            android:paddingHorizontal="70dp"
-            android:text="     Analytics"
+            android:gravity="center"
+            android:paddingHorizontal="300dp"
+            android:text="Analytics"
             android:textAppearance="@style/sidebar_btns"
             tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
         <Button
             android:id="@+id/btn_logout3"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="450dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
             android:background="@drawable/btn_rctngl_logout"
-            android:text="     Logout"
+            android:text="Logout"
             android:textAppearance="@style/sidebar_btns"
             android:drawableStart="@drawable/btn_logout_img"
-            android:paddingHorizontal="70dp"
-            android:gravity="start|center"
+            android:paddingHorizontal="310dp"
+            android:gravity="center"
             tools:ignore="HardcodedText,ObsoleteLayoutParam" />
 
     </FrameLayout>

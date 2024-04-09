@@ -8,21 +8,14 @@
     android:background="@color/white"
     tools:context=".OnPauseQ">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/LLwaitsmart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="60dp">
+                android:layout_marginTop="30dp">
                 <TextView
                     android:id="@+id/hello"
                     android:layout_width="wrap_content"
@@ -57,7 +50,7 @@
 
             <ImageView
                 android:id="@+id/rectangle_ns2"
-                android:layout_width="371dp"
+                android:layout_width="471dp"
                 android:layout_height="55dp"
                 android:layout_below="@id/LLwaitsmart"
                 android:layout_centerHorizontal="true"
@@ -79,17 +72,17 @@
 
             <ImageView
                 android:id="@+id/rectangle_pw"
-                android:layout_width="164dp"
+                android:layout_width="204dp"
                 android:layout_height="175dp"
                 android:layout_below="@+id/rectangle_ns2"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="75dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rectangle_pw"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/rectangle_pos"
-                android:layout_width="164dp"
+                android:layout_width="204dp"
                 android:layout_height="175dp"
                 android:layout_below="@+id/rectangle_ns2"
                 android:layout_toRightOf="@+id/rectangle_pw"
@@ -104,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_ns2"
                 android:layout_marginTop="170dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="90dp"
                 android:text="@string/people_wait"
                 android:textAppearance="@style/people_wait"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -116,7 +109,7 @@
                 android:layout_below="@id/rectangle_ns2"
                 android:layout_toRightOf="@id/people_wait"
                 android:layout_marginTop="170dp"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="190dp"
                 android:text="@string/position"
                 android:textAppearance="@style/position"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -126,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="280dp"
+                android:layout_marginTop="250dp"
                 android:text="@string/some_id"
                 android:textAppearance="@style/some_id"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -138,7 +131,7 @@
                 android:layout_below="@id/rectangle_ns2"
                 android:layout_toRightOf="@id/position"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="110dp"
                 android:background="@drawable/question"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -147,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="222dp"
-                android:layout_marginTop="-5dp"
+                android:layout_marginTop="1dp"
                 android:layout_below="@id/nowS2"
                 android:text="12:00PM"
                 android:textAppearance="@style/breaktime"
@@ -158,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="117dp"
-            android:layout_marginTop="-5dp"
+            android:layout_marginTop="1dp"
             android:layout_below="@id/nowS2"
             android:fontFamily="@font/poppins"
             android:text="On break until"
@@ -168,16 +161,17 @@
                 android:id="@+id/txt_ty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="-10dp"
-                android:layout_below="@id/txt_break"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/on_break_pause"
+                android:layout_below="@id/nowS2"
                 android:fontFamily="@font/poppins"
                 android:text="Thank you for your patience!"
                 android:textAppearance="@style/nowS"/>
 
             <ImageView
                 android:id="@+id/rectangle_est"
-                android:layout_width="367dp"
+                android:layout_width="467dp"
                 android:layout_height="47dp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/rectangle_pw"
@@ -191,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_pw"
                 android:layout_marginTop="33dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="80dp"
                 android:text="@string/est_wait_ti"
                 android:textAppearance="@style/est_wait_ti"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -203,29 +197,29 @@
                 android:layout_below="@id/rectangle_pw"
                 android:layout_marginTop="26dp"
                 android:layout_toRightOf="@id/est_wait_ti"
-                android:layout_marginLeft="230dp"
+                android:layout_marginLeft="320dp"
                 android:text="@string/m"
                 android:textAppearance="@style/m"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <ImageView
                 android:id="@+id/rectangle_num2"
-                android:layout_width="367dp"
+                android:layout_width="467dp"
                 android:layout_height="153dp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/rectangle_est"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/rectangle_num"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
             <ImageView
                 android:id="@+id/rectangle_nextnum2"
-                android:layout_width="65dp"
-                android:layout_height="52dp"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
                 android:layout_below="@id/rectangle_est"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="70dp"
-                android:background="@drawable/rectangle_nextnum"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rectangle_pw"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
             <TextView
@@ -233,8 +227,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_est"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="26dp"
                 android:text="@string/next"
                 android:textAppearance="@style/next"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -244,8 +238,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/next2"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="-3dp"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="20dp"
+                android:textSize="35sp"
                 android:text="@string/next_num"
                 android:textAppearance="@style/next_num"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -256,8 +251,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/rectangle_nextnum2"
                 android:layout_below="@id/est_wait_ti"
-                android:layout_marginTop="80dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="35dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -267,7 +262,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="35dp"
                 android:layout_below="@id/one_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -279,7 +274,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/two_p"
                 android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="35dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -289,7 +284,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="35dp"
                 android:layout_below="@id/three_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -301,7 +296,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/four_p"
                 android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="35dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -311,7 +306,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="35dp"
                 android:layout_below="@id/five_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -321,10 +316,10 @@
                 android:id="@+id/seven_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="45dp"
                 android:layout_toRightOf="@id/one_p"
                 android:layout_below="@id/est_wait_ti"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -334,7 +329,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/two_p"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="24dp"
                 android:layout_below="@id/seven_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -346,7 +341,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/eight_p"
                 android:layout_toRightOf="@id/three_p"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -356,7 +351,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/four_p"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="24dp"
                 android:layout_below="@id/nine_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -367,7 +362,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/five_p"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="24dp"
                 android:layout_below="@id/ten_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -379,7 +374,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/eleven_p"
                 android:layout_toRightOf="@id/six_p"
-                android:layout_marginLeft="18dp"
+                android:layout_marginLeft="24dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -390,8 +385,8 @@
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/seven_p"
                 android:layout_below="@id/est_wait_ti"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -401,7 +396,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/eight_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/thirteen_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -413,7 +408,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/fourteen_p"
                 android:layout_toRightOf="@id/nine_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -423,7 +418,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/ten_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/fifteen_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -435,7 +430,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/sixteen_p"
                 android:layout_toRightOf="@id/eleven_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -445,7 +440,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twelve_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/seventeen_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -457,8 +452,8 @@
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/thirteen_p"
                 android:layout_below="@id/est_wait_ti"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -469,7 +464,7 @@
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/fourteen_p"
                 android:layout_below="@id/nineteen_p"
-                android:layout_marginLeft="21dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -479,7 +474,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/fifteen_p"
-                android:layout_marginLeft="21dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/twenty_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -491,7 +486,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/twentyone_p"
                 android:layout_toRightOf="@id/sixteen_p"
-                android:layout_marginLeft="21dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -501,7 +496,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/seventeen_p"
-                android:layout_marginLeft="21dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/twentytwo_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -513,7 +508,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/twentythree_p"
                 android:layout_toRightOf="@id/eighteen_p"
-                android:layout_marginLeft="21dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -524,8 +519,8 @@
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/nineteen_p"
                 android:layout_below="@+id/est_wait_ti"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -535,7 +530,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twenty_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/twentyfive_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -547,7 +542,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/twentysix_p"
                 android:layout_toRightOf="@id/twentyone_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -557,7 +552,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twentytwo_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/twentyseven_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -569,7 +564,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/twentyeight_p"
                 android:layout_toRightOf="@id/twentythree_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -579,7 +574,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twentyfour_p"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/twentynine_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -591,8 +586,8 @@
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twentyfive_p"
                 android:layout_below="@id/est_wait_ti"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -602,7 +597,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twentysix_p"
-                android:layout_marginLeft="19dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/thirtyone_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -614,7 +609,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/thirtytwo_p"
                 android:layout_toRightOf="@id/twentyseven_p"
-                android:layout_marginLeft="19dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -624,7 +619,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/twentyeight_p"
-                android:layout_marginLeft="19dp"
+                android:layout_marginLeft="25dp"
                 android:layout_below="@id/thirtythree_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
@@ -636,7 +631,7 @@
                 android:layout_height="21dp"
                 android:layout_below="@id/thirtyfour_p"
                 android:layout_toRightOf="@id/twentynine_p"
-                android:layout_marginLeft="19dp"
+                android:layout_marginLeft="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -646,7 +641,7 @@
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_toRightOf="@id/thirty_p"
-                android:layout_marginLeft="19dp"
+                android:layout_marginLeft="27dp"
                 android:layout_below="@id/thirtyfive_p"
                 android:text="@string/dash"
                 android:textAppearance="@style/dash"
@@ -658,7 +653,7 @@
                 android:layout_height="214dp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/rectangle_num2"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/qrcode_queue"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -679,7 +674,7 @@
                 android:layout_height="39dp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/wtsmrt_qrnum"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="100dp"
                 android:src="@drawable/cancel_queue"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -689,7 +684,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_ns2"
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="150dp"
                 android:layout_marginTop="65dp"
                 android:text="@string/ppl_wait"
                 android:textAppearance="@style/ppl_wait"
@@ -701,7 +696,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_ns2"
                 android:layout_toRightOf="@id/rectangle_pw"
-                android:layout_marginLeft="89dp"
+                android:layout_marginLeft="110dp"
                 android:layout_marginTop="65dp"
                 android:text="38"
                 android:textAppearance="@style/pos_wait"
@@ -711,7 +706,7 @@
                 android:id="@+id/frmlyt_btnhelp_p"
                 android:layout_width="370dp"
                 android:layout_height="473dp"
-                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="130dp"
                 android:visibility="invisible"
                 tools:ignore="ObsoleteLayoutParam">
@@ -746,5 +741,3 @@
 
 
         </RelativeLayout>
-    </ScrollView>
-</RelativeLayout>

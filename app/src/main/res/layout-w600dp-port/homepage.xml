@@ -36,7 +36,7 @@
 
     <ImageView
         android:id="@+id/rectangle_ns2"
-        android:layout_width="371dp"
+        android:layout_width="471dp"
         android:layout_height="55dp"
         android:layout_below="@id/LLwaitsmart"
         android:layout_centerHorizontal="true"
@@ -58,17 +58,17 @@
 
     <ImageView
         android:id="@+id/rectangle_pw"
-        android:layout_width="164dp"
+        android:layout_width="204dp"
         android:layout_height="175dp"
         android:layout_below="@+id/rectangle_ns2"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rectangle_pw"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/rectangle_pos"
-        android:layout_width="164dp"
+        android:layout_width="204dp"
         android:layout_height="175dp"
         android:layout_below="@+id/rectangle_ns2"
         android:layout_toRightOf="@+id/rectangle_pw"
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/rectangle_ns2"
         android:layout_marginTop="170dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="90dp"
         android:text="@string/people_wait"
         android:textAppearance="@style/people_wait"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -95,7 +95,7 @@
         android:layout_below="@id/rectangle_ns2"
         android:layout_toRightOf="@id/people_wait"
         android:layout_marginTop="170dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="190dp"
         android:text="@string/position"
         android:textAppearance="@style/position"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -117,7 +117,7 @@
         android:layout_below="@id/rectangle_ns2"
         android:layout_toRightOf="@id/position"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="110dp"
         android:background="@drawable/question"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -126,8 +126,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/rectangle_pw"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/to_get_a_nu"
         android:textAppearance="@style/to_get_a_nu"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -137,8 +137,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/to_get_a_nu"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         android:text="@string/enter_the_s"
         android:textAppearance="@style/enter_the_s"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -148,8 +148,8 @@
         android:layout_width="199dp"
         android:layout_height="32dp"
         android:layout_below="@id/enter_the_s"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:background="@drawable/rectangle_snum"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -158,8 +158,8 @@
         android:layout_width="196dp"
         android:layout_height="41dp"
         android:layout_below="@id/enter_the_s"
-        android:layout_marginTop="3dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:text="@string/wtsmrt12345"
         android:textAppearance="@style/wtsmrt12345"
@@ -169,9 +169,9 @@
         android:id="@+id/or"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/enter_the_s"
-        android:layout_toRightOf="@id/enter_the_s"
-        android:layout_marginLeft="40dp"
+        android:layout_below="@id/wtsmrt12345"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/or"
         android:textAppearance="@style/or"
         tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -180,8 +180,8 @@
         android:id="@+id/qrcode"
         android:layout_width="65dp"
         android:layout_height="65dp"
-        android:layout_below="@id/to_get_a_nu"
-        android:layout_toRightOf="@id/or"
+        android:layout_below="@id/or"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
         android:background="@drawable/qrcode"
@@ -191,7 +191,7 @@
         android:id="@+id/btn_qstart"
         android:layout_width="140dp"
         android:layout_height="39dp"
-        android:layout_below="@id/or"
+        android:layout_below="@id/qrcode"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:src="@drawable/group_seven"
@@ -199,8 +199,8 @@
 
     <FrameLayout
         android:id="@+id/frmlyt_btnhelp"
-        android:layout_width="370dp"
-        android:layout_height="473dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam">
