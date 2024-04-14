@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".OnPauseQ">
+
+
+
+            <LinearLayout
+                android:id="@+id/LLwaitsmart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/reem_kufi"
+                    android:text="@string/hello"
+                    android:textAppearance="@style/hello"
+                    tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/there"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/reem_kufi"
+                    android:text="@string/there"
+                    android:textAppearance="@style/there"
+                    tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/rectangle_ns2"
+                android:layout_width="471dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/LLwaitsmart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_ns"
+                tools:ignore="ContentDescription,ImageContrastCheck,ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/nowS2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/LLwaitsmart"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/nowS"
+                android:textAppearance="@style/nowS"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck"/>
+
+            <ImageView
+                android:id="@+id/rectangle_pw"
+                android:layout_width="204dp"
+                android:layout_height="175dp"
+                android:layout_below="@+id/rectangle_ns2"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_pw"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/rectangle_pos"
+                android:layout_width="204dp"
+                android:layout_height="175dp"
+                android:layout_below="@+id/rectangle_ns2"
+                android:layout_toRightOf="@+id/rectangle_pw"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_pw"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/people_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_ns2"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="270dp"
+                android:text="@string/people_wait"
+                android:textAppearance="@style/people_wait"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="39dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/rectangle_ns2"
+                android:layout_toRightOf="@id/people_wait"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="180dp"
+                android:text="@string/position"
+                android:textAppearance="@style/position"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/some_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="210dp"
+                android:text="@string/some_id"
+                android:textAppearance="@style/some_id"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/question_pause"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@id/rectangle_ns2"
+                android:layout_toRightOf="@id/position"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/question"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/on_break_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="400dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/nowS2"
+                android:text="12:00PM"
+                android:textAppearance="@style/breaktime"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+            android:id="@+id/txt_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/nowS2"
+            android:fontFamily="@font/poppins"
+            android:text="On break until"
+            android:textAppearance="@style/nowS"/>
+
+            <TextView
+                android:id="@+id/txt_ty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/on_break_pause"
+                android:layout_below="@id/nowS2"
+                android:fontFamily="@font/poppins"
+                android:text="Thank you for your patience!"
+                android:textAppearance="@style/nowS"/>
+
+            <ImageView
+                android:id="@+id/rectangle_est"
+                android:layout_width="204dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="255dp"
+                android:layout_below="@id/rectangle_pw"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_pw"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/est_wait_ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_pw"
+                android:layout_marginTop="163dp"
+                android:layout_marginLeft="270dp"
+                android:text="@string/est_wait_ti"
+                android:textAppearance="@style/est_wait_ti"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_pw"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="315dp"
+                android:textSize="45sp"
+                android:text="@string/m"
+                android:textAppearance="@style/m"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+
+
+            <ImageView
+                android:id="@+id/qrcode_queue"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/rectangle_pos"
+                android:layout_toRightOf="@id/rectangle_est"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/qrcode_queue"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/wtsmrt_qrnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rectangle_est"
+                android:layout_below="@id/rectangle_pos"
+                android:rotation="-90"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="-10dp"
+                android:text="@string/wtsmrt12345"
+                android:textAppearance="@style/wtsmrt12345"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/cancel_queue_p"
+                android:layout_width="140dp"
+                android:layout_height="39dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/rectangle_est"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:src="@drawable/cancel_queue"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/ppl_wait_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_ns2"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="65dp"
+                android:text="@string/ppl_wait"
+                android:textAppearance="@style/ppl_wait"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/pos_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_ns2"
+                android:layout_toRightOf="@id/rectangle_pw"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="65dp"
+                android:text="38"
+                android:textAppearance="@style/pos_wait"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <FrameLayout
+                android:id="@+id/frmlyt_btnhelp_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <ImageView
+                    android:id="@+id/rectangle_btnhelp"
+                    android:layout_width="590dp"
+                    android:layout_height="500dp"
+                    android:background="@drawable/rectangle_qinstruc"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/queueing_in"
+                    android:layout_width="523dp"
+                    android:layout_height="426dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/queueing_in"
+                    android:textAppearance="@style/queueing_in"
+                    tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/exit_square_p"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="530dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/exit_square"
+                    tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </FrameLayout>
+        </RelativeLayout>
