@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:orientation="vertical"
-    android:background="@color/lg"
-    tools:context=".MainActivity">
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".SecondPage">
 
     <LinearLayout
         android:id="@+id/LLwaitsmart"
@@ -32,7 +32,7 @@
             android:id="@+id/smart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"
             android:fontFamily="@font/reem_kufi"
             android:text="@string/smart"
             android:textAppearance="@style/smart"
@@ -40,75 +40,77 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/what"
+        android:id="@+id/layerone"
         android:layout_width="277dp"
         android:layout_height="277dp"
         android:layout_below="@+id/LLwaitsmart"
         android:layout_marginTop="-50dp"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/todo"
-        android:src="@drawable/what"
+        android:src="@drawable/layerone"
         tools:ignore="ImageContrastCheck,ObsoleteLayoutParam" />
 
     <TextView
-        android:id="@+id/whatis"
+        android:id="@+id/how_it"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/what"
+        android:layout_below="@+id/layerone"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/reem_kufi"
-        android:text="What is WaitSmart?"
+        android:text="How it works?"
         android:textAppearance="@style/receive_rea"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
     <TextView
-        android:id="@+id/waitsmartis"
+        android:id="@+id/simplyscan"
         android:layout_width="450dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/whatis"
+        android:layout_below="@+id/how_it"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/reem_kufi"
         android:gravity="center"
-        android:text="@string/waitsmartis"
+        android:text="@string/simplyscan"
         android:textAppearance="@style/stay_inform"
         tools:ignore="ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
 
     <ImageView
-        android:id="@+id/group"
+        android:id="@+id/group2"
         android:layout_width="61dp"
         android:layout_height="16dp"
-        android:layout_below="@id/waitsmartis"
+        android:layout_below="@id/simplyscan"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/group"
+        android:src="@drawable/groupfor"
         android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam" />
 
     <ImageButton
-        android:id="@+id/skippp"
+        android:id="@+id/back"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_below="@+id/group"
+        android:layout_below="@+id/group2"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="60dp"
-        android:backgroundTint="@color/lg"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="@color/white"
         android:contentDescription="TODO"
-        android:src="@drawable/skip"
+        android:src="@drawable/back"
         tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
-        android:id="@+id/nextbtn"
+        android:id="@+id/nextbtn2"
         android:layout_width="118dp"
         android:layout_height="117dp"
+        android:layout_marginStart="99dp"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="99dp"
-        android:layout_toRightOf="@+id/group"
-        android:layout_below="@+id/group"
-        android:backgroundTint="@color/lg"
+        android:layout_toEndOf="@+id/group2"
+        android:layout_below="@+id/group2"
+        android:backgroundTint="@color/white"
         android:contentDescription="TODO"
         android:src="@drawable/arrow"
         tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
 </RelativeLayout>
+
+

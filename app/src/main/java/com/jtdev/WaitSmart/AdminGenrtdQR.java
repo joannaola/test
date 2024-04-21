@@ -9,10 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class AdminGenrtdQR extends AppCompatActivity {
 
-    ImageButton btn_share, btn_menu3;
+    ImageButton btn_share, btn_menu3, btn_green2, btn_print, btn_teams, btn_fb, btn_whatsapp;
     Button btn_home3, btn_genqr3, btn_anlytcs3, btn_logout3;
     FrameLayout frmlyt_shares, frmlyt_sidebar3;
     @SuppressLint("MissingInflatedId")
@@ -29,6 +30,11 @@ public class AdminGenrtdQR extends AppCompatActivity {
         btn_logout3 = findViewById(R.id.btn_logout3);
         btn_menu3 = findViewById(R.id.btn_menu3);
         frmlyt_shares = findViewById(R.id.frmlyt_shares);
+        btn_green2 = findViewById(R.id.btn_green2);
+        btn_print = findViewById(R.id.btn_print);
+        btn_teams = findViewById(R.id.btn_teams);
+        btn_fb = findViewById(R.id.btn_fb);
+        btn_whatsapp = findViewById(R.id.btn_whatsapp);
 
         btn_share.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,5 +91,14 @@ public class AdminGenrtdQR extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_print.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Printing", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
     }
 }

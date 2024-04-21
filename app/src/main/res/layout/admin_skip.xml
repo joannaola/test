@@ -7,6 +7,13 @@
     android:layout_gravity="center"
     android:background="@color/white">
 
+    <FrameLayout
+        android:id="@+id/frmlyt_select_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
     <ImageView
         android:id="@+id/rctngl_time"
         android:layout_width="291dp"
@@ -20,8 +27,8 @@
         android:id="@+id/txt_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
         android:text="Select Time"
         android:textAppearance="@style/select_time"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -30,9 +37,8 @@
         android:id="@+id/btn_cancel"
         android:layout_width="96dp"
         android:layout_height="31dp"
-        android:layout_below="@+id/txt_time"
-        android:layout_marginTop="260dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="40dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/btn_cancel"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -42,9 +48,8 @@
         android:layout_width="96dp"
         android:layout_height="31dp"
         android:layout_below="@+id/txt_time"
-        android:layout_toRightOf="@+id/btn_cancel"
-        android:layout_marginTop="260dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="160dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/btn_ok"
         tools:ignore="ContentDescription,ImageContrastCheck,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -53,8 +58,8 @@
         android:id="@+id/time_format"
         android:layout_width="241dp"
         android:layout_height="240dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
-
+    </FrameLayout>
 </RelativeLayout>

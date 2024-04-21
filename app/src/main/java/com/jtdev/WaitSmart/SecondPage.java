@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class SecondPage extends AppCompatActivity {
 
     ImageButton nextbtn2, back;
@@ -23,6 +25,8 @@ public class SecondPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SecondPage.this, ThirdPage.class);
                 startActivity(intent);
+
+                Animatoo.animateFade(SecondPage.this);
             }
         });
 
@@ -32,6 +36,8 @@ public class SecondPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SecondPage.this, MainActivity.class);
                 startActivity(intent);
+
+                Animatoo.animateSlideLeft(SecondPage.this);
             }
         });
     }

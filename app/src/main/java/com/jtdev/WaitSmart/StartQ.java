@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class StartQ extends AppCompatActivity {
 
 
@@ -29,8 +31,10 @@ public class StartQ extends AppCompatActivity {
         cancelqueue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StartQ.this, AdminLogin.class);
+                Intent intent = new Intent(StartQ.this, OnPauseQ.class);
                 startActivity(intent);
+
+                Animatoo.animateSlideDown(StartQ.this);
             }
         });
 

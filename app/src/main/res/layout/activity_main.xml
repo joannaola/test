@@ -32,11 +32,12 @@
             android:id="@+id/smart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"
             android:fontFamily="@font/reem_kufi"
             android:text="@string/smart"
             android:textAppearance="@style/smart"
-            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
+            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck"
+            android:layout_marginLeft="-8dp" />
     </LinearLayout>
 
     <ImageView
@@ -91,22 +92,26 @@
         android:layout_height="48dp"
         android:layout_below="@+id/group"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:backgroundTint="@color/lg"
         android:contentDescription="TODO"
         android:src="@drawable/skip"
-        tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+        tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,ImageContrastCheck"
+        android:layout_marginLeft="30dp" />
 
     <ImageButton
         android:id="@+id/nextbtn"
         android:layout_width="118dp"
         android:layout_height="117dp"
-        android:layout_marginLeft="50dp"
-        android:layout_toRightOf="@+id/group"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/group"
         android:layout_below="@+id/group"
         android:backgroundTint="@color/lg"
         android:contentDescription="TODO"
         android:src="@drawable/arrow"
-        tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+        android:onClick="fadeTransition"
+        tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/group" />
 
 </RelativeLayout>

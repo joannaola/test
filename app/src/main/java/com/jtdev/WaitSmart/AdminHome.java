@@ -3,16 +3,23 @@ package com.jtdev.WaitSmart;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.TimePicker;
+
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
+import java.util.Calendar;
 
 public class AdminHome extends AppCompatActivity {
 
-    ImageButton btn_menu, btn_yellow;
+
+    ImageButton btn_menu, btn_yellow, btn_red_home, btn_green_next, btn_stop;
     Button btn_home, btn_genqr, btn_anlytcs, btn_logout;
     FrameLayout frmlyt_sidebar;
     @SuppressLint("MissingInflatedId")
@@ -28,6 +35,9 @@ public class AdminHome extends AppCompatActivity {
         btn_anlytcs = findViewById(R.id.btn_anlytcs);
         btn_logout = findViewById(R.id.btn_logout);
         btn_yellow = findViewById(R.id.btn_yellow);
+        btn_red_home = findViewById(R.id.btn_red_home);
+        btn_green_next = findViewById(R.id.btn_green_next);
+        btn_stop = findViewById(R.id.btn_stop);
 
 
 
@@ -48,6 +58,8 @@ public class AdminHome extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminHome.this, AdminHome.class);
                 startActivity(intent);
+
+
             }
         });
 
@@ -78,10 +90,24 @@ public class AdminHome extends AppCompatActivity {
         btn_yellow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminHome.this, AdminBreak.class);
-                startActivity(intent);
+                final Calendar c = Calendar.getInstance();
+
+                int hour = c.get(Calendar.HOUR_OF_DAY);
+                int minute = c.get(Calendar.MINUTE);
+
+                TimePickerDialog timePickerDialog = new TimePickerDialog(AdminHome.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        Intent intent = new Intent(AdminHome.this, AdminBreak.class);
+                        startActivity(intent);
+                    }
+                },hour, minute, false);
+                timePickerDialog.show();
+
             }
         });
+
+
 
     }
 }

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@color/white"
-    tools:context=".StartQ">
+    tools:context=".OnPauseQ">
 
 
 
@@ -29,7 +29,7 @@
                     android:id="@+id/there"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:fontFamily="@font/reem_kufi"
                     android:text="@string/there"
                     android:textAppearance="@style/there"
@@ -75,7 +75,7 @@
                 android:layout_width="204dp"
                 android:layout_height="175dp"
                 android:layout_below="@+id/rectangle_ns2"
-                android:layout_marginLeft="75dp"
+                android:layout_marginStart="75dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rectangle_pw"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,ImageContrastCheck" />
@@ -85,8 +85,8 @@
                 android:layout_width="204dp"
                 android:layout_height="175dp"
                 android:layout_below="@+id/rectangle_ns2"
-                android:layout_toRightOf="@+id/rectangle_pw"
-                android:layout_marginLeft="40dp"
+                android:layout_toEndOf="@+id/rectangle_pw"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rectangle_pw"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,ImageContrastCheck" />
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_ns2"
                 android:layout_marginTop="170dp"
-                android:layout_marginLeft="90dp"
+                android:layout_marginStart="90dp"
                 android:text="@string/people_wait"
                 android:textAppearance="@style/people_wait"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -107,9 +107,9 @@
                 android:layout_width="39dp"
                 android:layout_height="15dp"
                 android:layout_below="@id/rectangle_ns2"
-                android:layout_toRightOf="@id/people_wait"
+                android:layout_toEndOf="@id/people_wait"
                 android:layout_marginTop="170dp"
-                android:layout_marginLeft="190dp"
+                android:layout_marginStart="190dp"
                 android:text="@string/position"
                 android:textAppearance="@style/position"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -125,25 +125,51 @@
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <ImageButton
-                android:id="@+id/question2"
+                android:id="@+id/question_pause"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_below="@id/rectangle_ns2"
-                android:layout_toRightOf="@id/position"
+                android:layout_toEndOf="@id/position"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
                 android:background="@drawable/question"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/ns_num"
+                android:id="@+id/on_break_pause"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
+                android:layout_marginStart="222dp"
+                android:layout_marginTop="1dp"
                 android:layout_below="@id/nowS2"
-                android:text="03"
-                android:textAppearance="@style/dsad"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+                android:text="12:00PM"
+                android:textAppearance="@style/breaktime"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+            android:id="@+id/txt_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/nowS2"
+            android:fontFamily="@font/poppins"
+            android:text="On break until"
+            android:textAppearance="@style/nowS"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txt_ty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@id/on_break_pause"
+                android:layout_below="@id/nowS2"
+                android:fontFamily="@font/poppins"
+                android:text="Thank you for your patience!"
+                android:textAppearance="@style/nowS"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:id="@+id/rectangle_est"
@@ -156,24 +182,24 @@
                 tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
             <TextView
-                android:id="@+id/txt_est"
+                android:id="@+id/est_wait_ti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_pw"
                 android:layout_marginTop="33dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp"
                 android:text="@string/est_wait_ti"
                 android:textAppearance="@style/est_wait_ti"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/num_est"
+                android:id="@+id/m"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_pw"
                 android:layout_marginTop="26dp"
-                android:layout_toRightOf="@id/txt_est"
-                android:layout_marginLeft="320dp"
+                android:layout_toEndOf="@id/est_wait_ti"
+                android:layout_marginStart="320dp"
                 android:text="@string/m"
                 android:textAppearance="@style/m"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -193,7 +219,7 @@
                 android:layout_width="122dp"
                 android:layout_height="122dp"
                 android:layout_below="@id/rectangle_est"
-                android:layout_marginLeft="90dp"
+                android:layout_marginStart="90dp"
                 android:layout_marginTop="35dp"
                 android:background="@drawable/rectangle_pw"
                 tools:ignore="ContentDescription,ObsoleteLayoutParam" />
@@ -203,422 +229,422 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_est"
-                android:layout_marginLeft="135dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="26dp"
                 android:text="@string/next"
                 android:textAppearance="@style/next"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/next_num_q"
+                android:id="@+id/next_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/next2"
-                android:layout_marginLeft="128dp"
+                android:layout_marginStart="128dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/next_num"
                 android:textSize="35sp"
+                android:text="@string/next_num"
                 android:textAppearance="@style/next_num"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/one"
+                android:id="@+id/one_p"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_below="@id/txt_est"
+                android:layout_toEndOf="@id/rectangle_nextnum2"
+                android:layout_below="@id/est_wait_ti"
                 android:layout_marginTop="45dp"
-                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/two"
+                android:id="@+id/two_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="35dp"
-                android:layout_below="@id/one"
+                android:layout_toEndOf="@id/rectangle_nextnum2"
+                android:layout_marginStart="35dp"
+                android:layout_below="@id/one_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/three"
+                android:id="@+id/three_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/two"
-                android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="35dp"
+                android:layout_below="@id/two_p"
+                android:layout_toEndOf="@id/rectangle_nextnum2"
+                android:layout_marginStart="35dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/four"
+                android:id="@+id/four_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="35dp"
-                android:layout_below="@id/three"
+                android:layout_toEndOf="@id/rectangle_nextnum2"
+                android:layout_marginStart="35dp"
+                android:layout_below="@id/three_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/five"
+                android:id="@+id/five_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/four"
-                android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="35dp"
+                android:layout_below="@id/four_p"
+                android:layout_toEndOf="@id/rectangle_nextnum2"
+                android:layout_marginStart="35dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/six"
+                android:id="@+id/six_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/rectangle_nextnum2"
-                android:layout_marginLeft="35dp"
-                android:layout_below="@id/five"
+                android:layout_toEndOf="@id/rectangle_nextnum2"
+                android:layout_marginStart="35dp"
+                android:layout_below="@id/five_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/seven"
+                android:id="@+id/seven_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
                 android:layout_marginTop="45dp"
-                android:layout_toRightOf="@id/one"
-                android:layout_below="@id/txt_est"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/one_p"
+                android:layout_below="@id/est_wait_ti"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/eight"
+                android:id="@+id/eight_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/two"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@id/seven"
+                android:layout_toEndOf="@id/two_p"
+                android:layout_marginStart="24dp"
+                android:layout_below="@id/seven_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/nine"
+                android:id="@+id/nine_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/eight"
-                android:layout_toRightOf="@id/three"
-                android:layout_marginLeft="23dp"
+                android:layout_below="@id/eight_p"
+                android:layout_toEndOf="@id/three_p"
+                android:layout_marginStart="24dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/ten"
+                android:id="@+id/ten_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/four"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@id/nine"
+                android:layout_toEndOf="@id/four_p"
+                android:layout_marginStart="24dp"
+                android:layout_below="@id/nine_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/eleven"
+                android:id="@+id/eleven_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/five"
-                android:layout_marginLeft="23dp"
-                android:layout_below="@id/ten"
+                android:layout_toEndOf="@id/five_p"
+                android:layout_marginStart="24dp"
+                android:layout_below="@id/ten_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twelve"
+                android:id="@+id/twelve_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/eleven"
-                android:layout_toRightOf="@id/six"
-                android:layout_marginLeft="23dp"
+                android:layout_below="@id/eleven_p"
+                android:layout_toEndOf="@id/six_p"
+                android:layout_marginStart="24dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirteen"
+                android:id="@+id/thirteen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/seven"
-                android:layout_below="@id/txt_est"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="45dp"
-                android:text="@string/one"
-                android:textAppearance="@style/one"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
-
-            <TextView
-                android:id="@+id/fourteen"
-                android:layout_width="20dp"
-                android:layout_height="21dp"
-                android:layout_toRightOf="@id/eight"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/thirteen"
-                android:text="@string/one"
-                android:textAppearance="@style/one"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
-
-            <TextView
-                android:id="@+id/fifteen"
-                android:layout_width="20dp"
-                android:layout_height="21dp"
-                android:layout_below="@id/fourteen"
-                android:layout_toRightOf="@id/nine"
-                android:layout_marginLeft="25dp"
-                android:text="@string/one"
-                android:textAppearance="@style/one"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
-
-            <TextView
-                android:id="@+id/sixteen"
-                android:layout_width="20dp"
-                android:layout_height="21dp"
-                android:layout_toRightOf="@id/ten"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/fifteen"
-                android:text="@string/one"
-                android:textAppearance="@style/one"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
-
-            <TextView
-                android:id="@+id/seventeen"
-                android:layout_width="20dp"
-                android:layout_height="21dp"
-                android:layout_below="@id/sixteen"
-                android:layout_toRightOf="@id/eleven"
-                android:layout_marginLeft="25dp"
-                android:text="@string/one"
-                android:textAppearance="@style/one"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
-
-            <TextView
-                android:id="@+id/eighteen"
-                android:layout_width="20dp"
-                android:layout_height="21dp"
-                android:layout_toRightOf="@id/twelve"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/seventeen"
-                android:text="@string/one"
-                android:textAppearance="@style/one"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
-
-            <TextView
-                android:id="@+id/nineteen"
-                android:layout_width="20dp"
-                android:layout_height="21dp"
-                android:layout_toRightOf="@id/thirteen"
-                android:layout_below="@id/txt_est"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/seven_p"
+                android:layout_below="@id/est_wait_ti"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twenty"
+                android:id="@+id/fourteen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/fourteen"
-                android:layout_below="@id/nineteen"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/eight_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/thirteen_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentyone"
+                android:id="@+id/fifteen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/fifteen"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/twenty"
+                android:layout_below="@id/fourteen_p"
+                android:layout_toEndOf="@id/nine_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentytwo"
+                android:id="@+id/sixteen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/twentyone"
-                android:layout_toRightOf="@id/sixteen"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/ten_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/fifteen_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentythree"
+                android:id="@+id/seventeen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/seventeen"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/twentytwo"
+                android:layout_below="@id/sixteen_p"
+                android:layout_toEndOf="@id/eleven_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentyfour"
+                android:id="@+id/eighteen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/twentythree"
-                android:layout_toRightOf="@id/eighteen"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/twelve_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/seventeen_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentyfive"
+                android:id="@+id/nineteen_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/nineteen"
-                android:layout_below="@+id/txt_est"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/thirteen_p"
+                android:layout_below="@id/est_wait_ti"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentysix"
+                android:id="@+id/twenty_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/twenty"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/twentyfive"
+                android:layout_toEndOf="@id/fourteen_p"
+                android:layout_below="@id/nineteen_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentyseven"
+                android:id="@+id/twentyone_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/twentysix"
-                android:layout_toRightOf="@id/twentyone"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/fifteen_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/twenty_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentyeight"
+                android:id="@+id/twentytwo_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/twentytwo"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/twentyseven"
+                android:layout_below="@id/twentyone_p"
+                android:layout_toEndOf="@id/sixteen_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/twentynine"
+                android:id="@+id/twentythree_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@+id/twentyeight"
-                android:layout_toRightOf="@id/twentythree"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/seventeen_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/twentytwo_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirty"
+                android:id="@+id/twentyfour_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/twentyfour"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/twentynine"
+                android:layout_below="@id/twentythree_p"
+                android:layout_toEndOf="@id/eighteen_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirtyone"
+                android:id="@+id/twentyfive_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/twentyfive"
-                android:layout_below="@id/txt_est"
-                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/nineteen_p"
+                android:layout_below="@+id/est_wait_ti"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="45dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirtytwo"
+                android:id="@+id/twentysix_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/twentysix"
-                android:layout_marginLeft="24dp"
-                android:layout_below="@id/thirtyone"
+                android:layout_toEndOf="@id/twenty_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/twentyfive_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirtythree"
+                android:id="@+id/twentyseven_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/thirtytwo"
-                android:layout_toRightOf="@id/twentyseven"
-                android:layout_marginLeft="24dp"
+                android:layout_below="@id/twentysix_p"
+                android:layout_toEndOf="@id/twentyone_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirtyfour"
+                android:id="@+id/twentyeight_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/twentyeight"
-                android:layout_marginLeft="24dp"
-                android:layout_below="@id/thirtythree"
+                android:layout_toEndOf="@id/twentytwo_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/twentyseven_p"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/thirtyfive"
+                android:id="@+id/twentynine_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_below="@id/thirtyfour"
-                android:layout_toRightOf="@id/twentynine"
-                android:layout_marginLeft="24dp"
+                android:layout_below="@id/twentyeight_p"
+                android:layout_toEndOf="@id/twentythree_p"
+                android:layout_marginStart="25dp"
                 android:text="@string/one"
                 android:textAppearance="@style/one"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/dash"
+                android:id="@+id/thirty_p"
                 android:layout_width="20dp"
                 android:layout_height="21dp"
-                android:layout_toRightOf="@id/thirty"
-                android:layout_marginLeft="25dp"
-                android:layout_below="@id/thirtyfive"
+                android:layout_toEndOf="@id/twentyfour_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/twentynine_p"
+                android:text="@string/one"
+                android:textAppearance="@style/one"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/thirtyone_p"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_toEndOf="@id/twentyfive_p"
+                android:layout_below="@id/est_wait_ti"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/one"
+                android:textAppearance="@style/one"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/thirtytwo_p"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_toEndOf="@id/twentysix_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/thirtyone_p"
+                android:text="@string/one"
+                android:textAppearance="@style/one"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/thirtythree_p"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_below="@id/thirtytwo_p"
+                android:layout_toEndOf="@id/twentyseven_p"
+                android:layout_marginStart="25dp"
+                android:text="@string/one"
+                android:textAppearance="@style/one"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/thirtyfour_p"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_toEndOf="@id/twentyeight_p"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/thirtythree_p"
+                android:text="@string/one"
+                android:textAppearance="@style/one"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/thirtyfive_p"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_below="@id/thirtyfour_p"
+                android:layout_toEndOf="@id/twentynine_p"
+                android:layout_marginStart="25dp"
+                android:text="@string/one"
+                android:textAppearance="@style/one"
+                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/dash_p"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_toEndOf="@id/thirty_p"
+                android:layout_marginStart="27dp"
+                android:layout_below="@id/thirtyfive_p"
                 android:text="@string/dash"
                 android:textAppearance="@style/dash"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
@@ -645,7 +671,7 @@
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <ImageButton
-                android:id="@+id/cancelqueue"
+                android:id="@+id/cancel_queue_p"
                 android:layout_width="140dp"
                 android:layout_height="39dp"
                 android:layout_centerHorizontal="true"
@@ -656,30 +682,30 @@
                 tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <TextView
-                android:id="@+id/ppl_wait"
+                android:id="@+id/ppl_wait_p"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_ns2"
-                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="65dp"
                 android:text="@string/ppl_wait"
                 android:textAppearance="@style/ppl_wait"
                 tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
             <TextView
-                android:id="@+id/pos_wait"
+                android:id="@+id/pos_p"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rectangle_ns2"
-                android:layout_toRightOf="@id/rectangle_pw"
-                android:layout_marginLeft="109dp"
+                android:layout_toEndOf="@id/rectangle_pw"
+                android:layout_marginStart="110dp"
                 android:layout_marginTop="65dp"
                 android:text="38"
                 android:textAppearance="@style/pos_wait"
-                tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
 
             <FrameLayout
-                android:id="@+id/frmlyt_btnhelp2"
+                android:id="@+id/frmlyt_btnhelp_p"
                 android:layout_width="370dp"
                 android:layout_height="473dp"
                 android:layout_centerInParent="true"
@@ -698,17 +724,17 @@
                     android:id="@+id/queueing_in"
                     android:layout_width="323dp"
                     android:layout_height="426dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:text="@string/queueing_in"
                     android:textAppearance="@style/queueing_in"
                     tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
 
                 <ImageButton
-                    android:id="@+id/exit_square2"
+                    android:id="@+id/exit_square_p"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginLeft="320dp"
+                    android:layout_marginStart="320dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/exit_square"
                     tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />

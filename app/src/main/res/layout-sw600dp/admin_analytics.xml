@@ -32,7 +32,7 @@
             android:id="@+id/smart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"
             android:fontFamily="@font/reem_kufi"
             android:text="@string/smart"
             android:textAppearance="@style/smart"
@@ -43,7 +43,7 @@
         android:id="@+id/btn_menu4"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/btn_menu"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
         android:text="Wait"
         android:textAppearance="@style/administrat"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -64,19 +64,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_toRightOf="@id/wait_dash"
+        android:layout_toEndOf="@id/wait_dash"
         android:text="Smart"
-        android:textColor="#C0CC97"
         android:textAppearance="@style/administrat"
-        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+        android:textColor="#C0CC97"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txt_report"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/smart_dash"
+        android:layout_toEndOf="@id/smart_dash"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:text="Dashboard"
         android:textAppearance="@style/administrat"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -87,10 +87,10 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_below="@id/LLwaitsmart"
-        android:layout_toRightOf="@id/txt_report"
-        android:layout_marginLeft="200dp"
+        android:layout_toEndOf="@id/txt_report"
+        android:layout_marginStart="200dp"
         android:src="@drawable/filter"
-        tools:ignore="ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
     <ImageView
@@ -108,7 +108,7 @@
         android:layout_width="340dp"
         android:layout_height="30dp"
         android:layout_below="@id/btn_download"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="180dp"
         android:gravity="center"
         android:text="__________________________________________"
@@ -120,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_report"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_marginTop="120dp"
         android:text="1,235"
         android:textAppearance="@style/TQTnum"
@@ -131,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/TQTnum"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_marginTop="5dp"
         android:text="Total Queues' today"
         android:textAppearance="@style/total_queue"
@@ -142,7 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/line3"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_marginTop="5dp"
         android:text="456"
         android:textAppearance="@style/TQTnum"
@@ -153,10 +153,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/UQTnum"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:text="Unattended Queues,\ntoday"
         android:textAppearance="@style/total_queue"
-        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+        android:textColor="#78909C"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/rctngl_anlytcs2"
@@ -173,7 +174,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/UQTtxt"
-        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="135dp"
         android:gravity="center"
         android:text="__________________________________________"
@@ -185,7 +186,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_below="@id/UQTtxt"
         android:text="4,587"
         android:textAppearance="@style/TQTnum"
@@ -195,7 +196,7 @@
         android:id="@+id/TQTtxt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_below="@id/TQTnum2"
         android:layout_marginTop="5dp"
         android:text="Queues' this month"
@@ -207,7 +208,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/line4"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_marginTop="10dp"
         android:text="10%"
         android:textAppearance="@style/TQTnum"
@@ -218,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/UQTnum2"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="155dp"
         android:layout_marginTop="5dp"
         android:text="Queues' is lower than\nmonth"
         android:textAppearance="@style/total_queue"
@@ -230,8 +231,8 @@
         android:layout_height="390dp"
         android:layout_below="@id/LLwaitsmart"
         android:layout_marginTop="75dp"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@id/TQTtxt2"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/TQTtxt2"
         android:backgroundTint="@color/white"
         android:src="@drawable/rctngl_anlytcs"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
@@ -242,8 +243,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/TQTnum"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="95dp"
-        android:layout_toRightOf="@id/TQTtxt"
+        android:layout_marginStart="95dp"
+        android:layout_toEndOf="@id/TQTtxt"
         android:textSize="25sp"
         android:text="2m 00s"
         android:textAppearance="@style/metric"
@@ -255,8 +256,8 @@
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_below="@id/UQTnum"
-        android:layout_toRightOf="@id/UQTtxt"
-        android:layout_marginLeft="45dp"
+        android:layout_toEndOf="@id/UQTtxt"
+        android:layout_marginStart="45dp"
         android:textSize="15sp"
         android:text="Av. Service Length per session"
         android:textAppearance="@style/primary_tit"
@@ -266,9 +267,9 @@
         android:id="@+id/perf_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/line4"
+        android:layout_toEndOf="@id/line4"
         android:layout_below="@id/TQTtxt2"
-        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
         android:text="8%"
         android:textAppearance="@style/TQTnum"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -278,9 +279,9 @@
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_below="@id/ave_txt"
-        android:layout_toRightOf="@id/rctngl_anlytcs2"
+        android:layout_toEndOf="@id/rctngl_anlytcs2"
         android:layout_marginTop="90dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:gravity="center"
         android:text="Performance is lower than last month"
         android:textAppearance="@style/primary_tit"
@@ -289,99 +290,110 @@
     <ImageView
         android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/perf_num"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs2"
         android:src="@drawable/line_pink"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@id/rctngl_anlytcs2"
-        android:layout_below="@id/perf_num"/>
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="17dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ellipse_pink"
         android:layout_below="@id/perf_num"
-        android:layout_toRightOf="@id/rctngl_anlytcs2"
-        android:layout_marginLeft="148dp"/>
+        android:layout_marginStart="148dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs2"
+        android:src="@drawable/ellipse_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/rctngl_pink"
         android:layout_width="5dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/rctngl_pink"
-        android:layout_toRightOf="@id/rctngl_anlytcs2"
         android:layout_below="@id/perf_txt"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs2"
+        android:src="@drawable/rctngl_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="15dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/tri_down_pink"
         android:layout_below="@id/rctngl_pink"
-        android:layout_toRightOf="@id/rctngl_anlytcs2"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="-10dp"/>
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs2"
+        android:src="@drawable/tri_down_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/line_green"
         android:layout_below="@id/rctngl_anlytcs"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="45dp"/>
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/line_green"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="13dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ellipse_green"
         android:layout_below="@+id/rctngl_anlytcs"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ellipse_green"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/perf_num"
+        android:layout_marginStart="45dp"
+        android:importantForAccessibility="no"
         android:src="@drawable/line_pink"
-        android:layout_marginLeft="45dp"
-        android:layout_below="@id/perf_num"/>
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:layout_width="13dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ellipse_pink"
         android:layout_below="@id/perf_num"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ellipse_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/up_pink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/up_pink"
-        android:layout_toRightOf="@id/UQTnum2"
         android:layout_below="@id/perf_txt"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@id/UQTnum2"
+        android:src="@drawable/up_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
 
     <ImageView
         android:id="@+id/down_green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/down_green"
-        android:layout_toRightOf="@id/TQTnum"
         android:layout_below="@id/rctngl_anlytcs"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"/>
-
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/TQTnum"
+        android:src="@drawable/down_green"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
 
     <ImageView
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ellipse_grey_circle"
         android:layout_below="@id/TQTtxt"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="22dp"
-        android:layout_marginLeft="60dp"/>
+        android:src="@drawable/ellipse_grey_circle"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="70dp"
@@ -389,15 +401,17 @@
         android:src="@drawable/ellipse_grey_circle"
         android:layout_below="@id/wait_dash"
         android:layout_marginTop="110dp"
-        android:layout_marginLeft="60dp"/>
+        android:layout_marginStart="60dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:layout_width="31dp"
         android:layout_height="39dp"
-        android:src="@drawable/ellipse_orange"
         android:layout_below="@id/line3"
+        android:layout_marginStart="99dp"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="99dp"/>
+        android:src="@drawable/ellipse_orange"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="43dp"
@@ -405,39 +419,44 @@
         android:src="@drawable/ellipse_blue"
         android:layout_below="@id/wait_dash"
         android:layout_marginTop="111dp"
-        android:layout_marginLeft="89dp"/>
+        android:layout_marginStart="89dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:layout_width="39dp"
         android:layout_height="39dp"
-        android:src="@drawable/ellipse_lorange"
         android:layout_below="@id/line3"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="23dp"/>
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/ellipse_lorange"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="39dp"
         android:layout_height="39dp"
         android:src="@drawable/ellipse_lblue"
         android:layout_below="@id/wait_dash"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="141dp"/>
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="141dp"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/img_orange"
         android:layout_below="@id/line3"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="33dp"/>
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/img_orange"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:src="@drawable/img_blue"
         android:layout_below="@id/wait_dash"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="153dp"/>
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="153dp"
+        tools:ignore="ContentDescription" />
 
 
 
@@ -522,7 +541,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="870dp"
-            android:layout_marginLeft="470dp"
+            android:layout_marginStart="470dp"
             android:background="@drawable/btn_rctngl_logout"
             android:text="     Logout"
             android:textAppearance="@style/sidebar_btns"

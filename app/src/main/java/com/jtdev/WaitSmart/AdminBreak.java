@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 
 public class AdminBreak extends AppCompatActivity {
 
-    ImageButton btn_menu5, btn_red_resume;
+    ImageButton btn_menu5, btn_red_resume, btn_green_next_brk, btn_red_skip_brk, btn_stop_brk;
     Button btn_home5, btn_genqr5, btn_anlytcs5, btn_logout5;
     FrameLayout frmlyt_sidebar5;
     @SuppressLint("MissingInflatedId")
@@ -28,8 +28,9 @@ public class AdminBreak extends AppCompatActivity {
         btn_anlytcs5 = findViewById(R.id.btn_anlytcs5);
         btn_logout5 = findViewById(R.id.btn_logout5);
         btn_red_resume = findViewById(R.id.btn_red_resume);
-
-
+        btn_green_next_brk = findViewById(R.id.btn_green_next_brk);
+        btn_red_skip_brk = findViewById(R.id.btn_red_skip_brk);
+        btn_stop_brk = findViewById(R.id.btn_stop_brk);
 
         btn_menu5.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -32,7 +32,7 @@
             android:id="@+id/smart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"
             android:fontFamily="@font/reem_kufi"
             android:text="@string/smart"
             android:textAppearance="@style/smart"
@@ -75,12 +75,12 @@
         android:id="@+id/enter_user2"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/login_your"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp"
         android:hint="Enter your username"
         android:textAppearance="@style/enter_user"
-        tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,TextFields,TouchTargetSizeCheck" />
+        tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,TextFields,TouchTargetSizeCheck,TextContrastCheck" />
 
     <TextView
         android:id="@+id/lbl_usern"
@@ -88,7 +88,7 @@
         android:layout_height="14dp"
         android:layout_below="@id/login_your"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="165dp"
+        android:layout_marginStart="165dp"
         android:text="USERNAME"
         android:textAppearance="@style/label"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -120,7 +120,7 @@
         android:layout_height="14dp"
         android:layout_below="@id/rectangle_usern"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="165dp"
+        android:layout_marginStart="165dp"
         android:text="PASSWORD"
         android:textAppearance="@style/label"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />

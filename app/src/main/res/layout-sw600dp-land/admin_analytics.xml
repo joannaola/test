@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".AdminAnlytcs">
+
+    <LinearLayout
+        android:id="@+id/LLwaitsmart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reem_kufi"
+            android:text="@string/wait"
+            android:textAppearance="@style/wait"
+            tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/smart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-8dp"
+            android:fontFamily="@font/reem_kufi"
+            android:text="@string/smart"
+            android:textAppearance="@style/smart"
+            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_menu4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/btn_menu"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/wait_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_marginStart="80dp"
+        android:text="Wait"
+        android:textAppearance="@style/administrat"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/smart_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_toEndOf="@id/wait_dash"
+        android:text="Smart"
+        android:textAppearance="@style/administrat"
+        android:textColor="#C0CC97"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txt_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/smart_dash"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_marginStart="10dp"
+        android:text="Dashboard"
+        android:textAppearance="@style/administrat"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+
+    <ImageButton
+        android:id="@+id/btn_download"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/LLwaitsmart"
+        android:layout_toEndOf="@id/txt_report"
+        android:layout_marginStart="500dp"
+        android:src="@drawable/filter"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/rctngl_anlytcs"
+        android:layout_width="373dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/btn_download"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/rctngl_anlytcs"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="340dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_download"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="__________________________________________"
+        android:textAppearance="@style/share_with"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/TQTnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_report"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="30dp"
+        android:text="1,235"
+        android:textAppearance="@style/TQTnum"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/TQTtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TQTnum"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="5dp"
+        android:text="Total Queues' today"
+        android:textAppearance="@style/total_queue"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/UQTnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="0dp"
+        android:text="456"
+        android:textAppearance="@style/TQTnum"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/UQTtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UQTnum"
+        android:layout_marginStart="255dp"
+        android:text="Unattended Queues,\ntoday"
+        android:textAppearance="@style/total_queue"
+        android:textColor="#78909C"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/rctngl_anlytcs2"
+        android:layout_width="373dp"
+        android:layout_height="246dp"
+        android:layout_below="@id/btn_download"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="485dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/rctngl_anlytcs"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/line4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_download"
+        android:layout_marginStart="530dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="__________________________________________"
+        android:textAppearance="@style/share_with"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/TQTnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="640dp"
+        android:layout_below="@id/btn_download"
+        android:text="4,587"
+        android:textAppearance="@style/TQTnum"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/TQTtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="640dp"
+        android:layout_below="@id/TQTnum2"
+        android:layout_marginTop="5dp"
+        android:text="Queues' this month"
+        android:textAppearance="@style/total_queue"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/UQTnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line4"
+        android:layout_marginStart="640dp"
+        android:layout_marginTop="10dp"
+        android:text="10%"
+        android:textAppearance="@style/TQTnum"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/UQTtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UQTnum2"
+        android:layout_marginStart="640dp"
+        android:layout_marginTop="5dp"
+        android:text="Queues' is lower than\nmonth"
+        android:textAppearance="@style/total_queue"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/rctngl_anlytcs_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rctngl_anlytcs"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="75dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/rctngl_anlytcs"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/ave_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rctngl_anlytcs"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="235dp"
+        android:textSize="25sp"
+        android:text="2m 00s"
+        android:textAppearance="@style/metric"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/ave_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ave_num"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:text="Av. Service Length per session"
+        android:textAppearance="@style/primary_tit"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/perf_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rctngl_anlytcs_small"
+        android:layout_below="@id/rctngl_anlytcs2"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="170dp"
+        android:text="8%"
+        android:textAppearance="@style/TQTnum"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/perf_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rctngl_anlytcs2"
+        android:layout_toEndOf="@id/rctngl_anlytcs_small"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="Performance is lower than last month"
+        android:textAppearance="@style/primary_tit"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perf_num"
+        android:layout_marginStart="130dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs_small"
+        android:src="@drawable/line_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perf_num"
+        android:layout_marginStart="240dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs_small"
+        android:src="@drawable/ellipse_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/rctngl_pink"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perf_txt"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs_small"
+        android:src="@drawable/rctngl_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rctngl_pink"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs_small"
+        android:src="@drawable/tri_down_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_download"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs"
+        android:src="@drawable/line_green"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_download"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ellipse_green"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line4"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs"
+        android:src="@drawable/line_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line4"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/rctngl_anlytcs"
+        android:src="@drawable/ellipse_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/up_pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line4"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/UQTnum2"
+        android:src="@drawable/up_pink"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+    <ImageView
+        android:id="@+id/down_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_download"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@id/TQTnum2"
+        android:src="@drawable/down_green"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TQTtxt"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/ellipse_grey_circle"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse_grey_circle"
+        android:layout_below="@id/wait_dash"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="155dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="31dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/line3"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ellipse_orange"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ellipse_blue"
+        android:layout_below="@id/wait_dash"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="179dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/line3"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/ellipse_lorange"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:src="@drawable/ellipse_lblue"
+        android:layout_below="@id/wait_dash"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="45dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/line3"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/img_orange"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/img_blue"
+        android:layout_below="@id/wait_dash"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="57dp"
+        tools:ignore="ContentDescription" />
+
+
+
+    <FrameLayout
+        android:id="@+id/frmlyt_sidebar4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:ignore="ObsoleteLayoutParam">
+        <ImageView
+            android:id="@+id/sidebar"
+            android:layout_width="650dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/sidebar"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/wait7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/reem_kufi"
+            android:text="@string/wait"
+            android:textAppearance="@style/wait"
+            tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/smart7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/reem_kufi"
+            android:text="Smart."
+            android:textAppearance="@style/smart"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_home4"
+            android:layout_width="616dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/btn_rectangle"
+            android:drawableStart="@drawable/btn_home_img"
+            android:gravity="start|center"
+            android:paddingHorizontal="70dp"
+            android:text=" Home"
+            android:textAppearance="@style/sidebar_btns"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <Button
+            android:id="@+id/btn_genqr4"
+            android:layout_width="616dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/btn_rctngl_genqr"
+            android:drawableStart="@drawable/btn_qr_img"
+            android:gravity="start|center"
+            android:paddingHorizontal="70dp"
+            android:text=" Generate QR"
+            android:textAppearance="@style/sidebar_btns"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <Button
+            android:id="@+id/btn_anlytcs4"
+            android:layout_width="616dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/btn_rctngl_anlytcs"
+            android:drawableStart="@drawable/btn_anlytcs_img"
+            android:gravity="start|center"
+            android:paddingHorizontal="70dp"
+            android:text=" Analytics"
+            android:textAppearance="@style/sidebar_btns"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <Button
+            android:id="@+id/btn_logout4"
+            android:layout_width="616dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="420dp"
+            android:background="@drawable/btn_rctngl_logout"
+            android:text=" Logout"
+            android:paddingHorizontal="75dp"
+            android:textAppearance="@style/sidebar_btns"
+            android:drawableStart="@drawable/btn_logout_img"
+            android:gravity="start|center"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    </FrameLayout>
+</RelativeLayout>

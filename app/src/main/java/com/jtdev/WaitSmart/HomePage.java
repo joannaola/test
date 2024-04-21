@@ -9,9 +9,11 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class HomePage extends AppCompatActivity {
 
-    ImageButton btn_qstart, question, exit_square;
+    ImageButton btn_qstart, question, exit_square, qrcode;
     FrameLayout frmlyt_btnhelp;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -23,12 +25,15 @@ public class HomePage extends AppCompatActivity {
         question = findViewById(R.id.question);
         frmlyt_btnhelp = findViewById(R.id.frmlyt_btnhelp);
         exit_square = findViewById(R.id.exit_square);
+        qrcode = findViewById(R.id.qrcode);
 
         btn_qstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomePage.this, StartQ.class);
                 startActivity(intent);
+
+                Animatoo.animateFade(HomePage.this);
             }
         });
 
@@ -55,6 +60,8 @@ public class HomePage extends AppCompatActivity {
                 }
             }
         });
+
+
 
     }
 }

@@ -32,7 +32,7 @@
             android:id="@+id/smart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"
             android:fontFamily="@font/reem_kufi"
             android:text="@string/smart"
             android:textAppearance="@style/smart"
@@ -44,7 +44,7 @@
         android:layout_width="277dp"
         android:layout_height="277dp"
         android:layout_below="@+id/LLwaitsmart"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/todo"
         android:src="@drawable/illustration"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/illus"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="Login your admin account"
         android:textAppearance="@style/login_your_"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -67,7 +67,7 @@
         android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/login_your"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rectangle_snum"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/login_your"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="29dp"
         android:hint="Enter your username"
         android:textAppearance="@style/enter_user"
         tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,TextFields,TouchTargetSizeCheck" />
@@ -87,8 +87,8 @@
         android:layout_width="66dp"
         android:layout_height="14dp"
         android:layout_below="@id/login_your"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="75dp"
         android:text="USERNAME"
         android:textAppearance="@style/label"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -99,7 +99,7 @@
         android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/rectangle_usern"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rectangle_snum"
         tools:ignore="ContentDescription,ObsoleteLayoutParam" />
 
@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/rectangle_usern"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="28dp"
         android:hint="Enter your password"
         android:textAppearance="@style/enter_user"
         tools:ignore="Autofill,HardcodedText,LabelFor,ObsoleteLayoutParam,TextFields,TouchTargetSizeCheck" />
@@ -119,8 +119,8 @@
         android:layout_width="66dp"
         android:layout_height="14dp"
         android:layout_below="@id/rectangle_usern"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="75dp"
         android:text="PASSWORD"
         android:textAppearance="@style/label"
         tools:ignore="HardcodedText,ObsoleteLayoutParam,TextSizeCheck" />
@@ -131,7 +131,7 @@
         android:layout_height="32dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/rectangle_pass"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/btn_login"
         tools:ignore="ContentDescription,ObsoleteLayoutParam,SpeakableTextPresentCheck,TouchTargetSizeCheck" />

@@ -5,14 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class AdminAnlytcs extends AppCompatActivity {
 
-    ImageButton btn_menu4;
+    ImageButton btn_menu4, btn_download;
     Button btn_home4, btn_genqr4, btn_anlytcs4, btn_logout4;
     FrameLayout frmlyt_sidebar4;
     @SuppressLint("MissingInflatedId")
@@ -28,7 +30,7 @@ public class AdminAnlytcs extends AppCompatActivity {
         btn_anlytcs4 = findViewById(R.id.btn_anlytcs4);
         btn_logout4 = findViewById(R.id.btn_logout4);
         btn_menu4 = findViewById(R.id.btn_menu4);
-
+        btn_download = findViewById(R.id.btn_download);
 
 
         btn_menu4.setOnClickListener(new View.OnClickListener() {
@@ -74,5 +76,15 @@ public class AdminAnlytcs extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Downloading Report", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
     }
 }

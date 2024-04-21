@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class AdminGenQR extends AppCompatActivity {
 
 
@@ -35,6 +37,8 @@ public class AdminGenQR extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminGenQR.this, AdminGenrtdQR.class);
                 startActivity(intent);
+
+                Animatoo.animateZoom(AdminGenQR.this);
             }
         });
 

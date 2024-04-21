@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class OnPauseQ extends AppCompatActivity {
 
     ImageButton exit_square_p, cancel_queue_p, question_pause;
@@ -36,7 +38,6 @@ public class OnPauseQ extends AppCompatActivity {
             }
         });
 
-
         question_pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +47,16 @@ public class OnPauseQ extends AppCompatActivity {
                 }else{
                     frmlyt_btnhelp_p.setVisibility(View.VISIBLE);
                 }
+            }
+        });
+
+        cancel_queue_p.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(OnPauseQ.this, AdminLogin.class);
+                startActivity(intent);
+
+                Animatoo.animateSlideUp(OnPauseQ.this);
             }
         });
     }

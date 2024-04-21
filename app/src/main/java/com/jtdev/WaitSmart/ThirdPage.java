@@ -8,30 +8,36 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class ThirdPage extends AppCompatActivity {
 
-
+    ImageButton getstarted, backk;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thirdpage);
 
-        ImageButton getstarted = findViewById(R.id.getstarted);
+        getstarted = findViewById(R.id.getstarted);
         getstarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ThirdPage.this, HomePage.class);
                 startActivity(intent);
+
+                Animatoo.animateSlideUp(ThirdPage.this);
             }
         });
 
-        ImageButton backk = findViewById(R.id.backk);
+        backk = findViewById(R.id.backk);
         backk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ThirdPage.this, SecondPage.class);
                 startActivity(intent);
+
+                Animatoo.animateSlideLeft(ThirdPage.this);
             }
         });
     }

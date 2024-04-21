@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class AdminLogin extends AppCompatActivity {
 
     ImageButton btn_login, btn_register;
@@ -25,6 +27,8 @@ public class AdminLogin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminLogin.this, AdminHome.class);
                 startActivity(intent);
+
+                Animatoo.animateZoom(AdminLogin.this);
             }
         });
 
@@ -34,6 +38,8 @@ public class AdminLogin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminLogin.this, AdminSignup.class);
                 startActivity(intent);
+
+                Animatoo.animateSlideRight(AdminLogin.this);
             }
         });
     }

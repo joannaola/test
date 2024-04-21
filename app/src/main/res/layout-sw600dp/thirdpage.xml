@@ -32,7 +32,7 @@
             android:id="@+id/smart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-8dp"
+            android:layout_marginStart="-8dp"
             android:fontFamily="@font/reem_kufi"
             android:text="@string/smart"
             android:textAppearance="@style/smart"
@@ -82,9 +82,9 @@
         android:layout_below="@id/stay_inform"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/groupfive"
         android:contentDescription="TODO"
-        tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam" />
+        android:src="@drawable/groupfive"
+        tools:ignore="ContentDescription,HardcodedText,ObsoleteLayoutParam,ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/backk"
@@ -92,7 +92,7 @@
         android:layout_height="48dp"
         android:layout_below="@+id/group3"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
         android:backgroundTint="@color/lg"
         android:contentDescription="TODO"
         android:src="@drawable/back"
@@ -102,9 +102,9 @@
         android:id="@+id/getstarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="55dp"
-        android:layout_toRightOf="@+id/group3"
+        android:layout_toEndOf="@+id/group3"
         android:layout_below="@+id/group3"
         android:backgroundTint="@color/lg"
         android:contentDescription="TODO"
